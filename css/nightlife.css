@@ -1,0 +1,50 @@
+/* Additional Styles
+   -----------------
+*/
+
+/* Global styles */
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header and nav styles */
+nav.navbar{
+  margin: 0;
+}
+
+/*
+  Section specific styles
+  -----------------------
+*/
+
+/* Section 1: Hero Style */
+section#hero{
+  padding-top: 250px;
+  height: 800px;
+  background-image: url(../img/nightlife.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+section#hero h1{
+  margin: 0;
+  font-size: 6em;
+  color: #e2e4e6;
+}
+
+section#hero button{
+  margin-top: 100px;
+  padding: 15px 80px;
+  font-size: 2em;
+  background-color: #0088b8;
+  color: white;
+}
+
+/* Section 2: Find new places */
+section#discover {
+  padding-top: 20px;
+}
+section#discover h2{
+  text-align: center;
+}
