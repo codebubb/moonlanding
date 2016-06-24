@@ -33,15 +33,62 @@
   <section id="hero">
     <div class="container-fluid">
       <h1>Where will tonight take you?</h1>
-      <button class="btn">Discover</button>
+      <a href="#discover" class="btn">Discover</a>
     </div>
   </section>
   <section id="discover">
-    <div class="container-fluid">
+    <div class="container">
       <h2>Discover new places</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Dine out</h3>
+          <img src="img/food.jpg" alt="Dining out" class="img-responsive">
+        </div>
+        <div class="col-sm-6">
+          <h3>Exclusive hotels</h3>
+          <img src="img/posh.jpg" alt="Access Exclusive Hotels" class="img-responsive">
+        </div>
+        <div class="col-sm-6">
+          <h3>Gourmet Coffee</h3>
+          <img src="img/coffee.jpg" alt="Enjoy Gourment Coffee" class="img-responsive">
+        </div>
+        <div class="col-sm-6">
+          <h3>Live music</h3>
+          <img src="img/live-music.jpg" alt="See Live performances" class="img-responsive">
+        </div>
+      </div>
     </div>
   </section>
+  <section id="events">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <ul class="list-unstyled">
+        <li>
+          <h3>Food festival</h3>
+          <span>3rd August</span>
+          <p>A tanatalising treat for the tastebuds! More than 40 venues taking part in a festival celebrating the finest cuisine on offer.</p>
+          </li>
+      </ul>
+    </div>
+  </section>
+  <section id="getting-here">
+    <div class="container">
+      <h2>Getting Here</h2>
+    </div>
+  </section>
+
   <script src="./js/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script>
+    $(function(){
+      $('.btn').on('click', function(e){
+        var moveTo = this.getAttribute('href');
+
+        console.log("scrolling...");
+        $('html, body').animate({scrollTop: $(moveTo).offset().top }, 1000);
+
+      });
+    });
+  </script>
 </body>
 </html>

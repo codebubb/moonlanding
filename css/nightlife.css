@@ -33,12 +33,17 @@ section#hero h1{
   color: #e2e4e6;
 }
 
-section#hero button{
+section#hero a{
   margin-top: 100px;
   padding: 15px 80px;
   font-size: 2em;
   background-color: #0088b8;
   color: white;
+  transition: background-color .4s ease;
+}
+
+section#hero a:hover{
+  background-color: #084358;
 }
 
 /* Section 2: Find new places */
