@@ -41,20 +41,32 @@
       <h2>Discover new places</h2>
       <div class="row">
         <div class="col-sm-6">
-          <h3>Dine out</h3>
-          <img src="img/food.jpg" alt="Dining out" class="img-responsive">
+            <h3>Dine out</h3>
+          <div class="feature">
+            <img src="img/food.jpg" alt="Dining out">
+            <p class="overlay">Experience fine dining with an evening of delicious food.</p>
+          </div>
         </div>
         <div class="col-sm-6">
           <h3>Exclusive hotels</h3>
-          <img src="img/posh.jpg" alt="Access Exclusive Hotels" class="img-responsive">
+          <div class="feature">
+            <img src="img/posh.jpg" alt="Access Exclusive Hotels" class="img-responsive">
+            <p class="overlay">Make your weekend get away extra special with exclusive hotels.</p>
+          </div>
         </div>
         <div class="col-sm-6">
           <h3>Gourmet Coffee</h3>
-          <img src="img/coffee.jpg" alt="Enjoy Gourment Coffee" class="img-responsive">
-        </div>
+          <div class="feature">
+            <img src="img/coffee.jpg" alt="Enjoy Gourment Coffee" class="img-responsive">
+            <p class="overlay">Un-wind with a fresh tasting coffee.</p>
+          </div>
+    </div>
         <div class="col-sm-6">
           <h3>Live music</h3>
-          <img src="img/live-music.jpg" alt="See Live performances" class="img-responsive">
+          <div class="feature">
+            <img src="img/live-music.jpg" alt="See Live performances" class="img-responsive">
+            <p class="overlay">Rock out with some of the best sounding live performances.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -110,8 +122,14 @@
   <script src="./js/bootstrap.min.js"></script>
   <script>
     $(function(){
-      $('.btn').on('click', function(e){
+      $('.btn').on('click', function(){
         $('html, body').animate({scrollTop: $(this.getAttribute('href')).offset().top }, 1000);
+      });
+      $('.feature').hover(function(){
+        $(this).children('p').slideDown();
+
+      }, function(){
+        $(this).children('p').slideUp();
       });
     });
   </script>
