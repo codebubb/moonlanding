@@ -6,7 +6,15 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
-
+h2,h3 {
+  text-align: center;
+}
+h2{
+margin: 20px;
+}
+h3{
+margin: 25px;
+}
 /* Header and nav styles */
 nav.navbar{
   margin: 0;
@@ -48,8 +56,15 @@ section#hero a:hover{
 
 /* Section 2: Find new places */
 section#discover {
-  padding-top: 20px;
+  padding-top: 40px;
 }
-section#discover h2{
-  text-align: center;
+
+/* Section 3: Events */
+section#events {
+  padding-top: 40px;
+}
+
+/* Section 4: Getting here */
+section#getting-here {
+  padding-top: 40px;
 }

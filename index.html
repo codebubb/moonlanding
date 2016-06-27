@@ -64,7 +64,7 @@
       <h2>Upcoming Events</h2>
       <ul class="list-unstyled">
         <li>
-          <h3>Food festival</h3>
+          <h4>Food festival</h4>
           <span>3rd August</span>
           <p>A tanatalising treat for the tastebuds! More than 40 venues taking part in a festival celebrating the finest cuisine on offer.</p>
           </li>
@@ -82,11 +82,7 @@
   <script>
     $(function(){
       $('.btn').on('click', function(e){
-        var moveTo = this.getAttribute('href');
-
-        console.log("scrolling...");
-        $('html, body').animate({scrollTop: $(moveTo).offset().top }, 1000);
-
+        $('html, body').animate({scrollTop: $(this.getAttribute('href')).offset().top }, 1000);
       });
     });
   </script>
