@@ -149,6 +149,21 @@ section#getting-here {
   padding-top: 40px;
 }
 
+section#getting-here .map, section#getting-here .details{
+  width: 50%;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+section#getting-here .details{
+  padding: 0 40px;
+}
+section#getting-here .details p{
+  margin: 0 0 40px 0;
+}
+
+
+
 /* Responsive elements */
 
 @media(max-width: 480px){
