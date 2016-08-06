@@ -162,8 +162,10 @@ section#getting-here .details p{
   margin: 0 0 40px 0;
 }
 
-
-
+/* Section 5: Contact us */
+section#contact {
+  padding-top: 40px;
+}
 /* Responsive elements */
 
 @media(max-width: 480px){
