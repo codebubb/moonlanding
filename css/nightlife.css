@@ -166,6 +166,10 @@ section#getting-here .details p{
 section#contact {
   padding-top: 40px;
 }
+section#contact form{
+  margin: 0 auto;
+  width: 50%;
+}
 /* Responsive elements */
 
 @media(max-width: 480px){
