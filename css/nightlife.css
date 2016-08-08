@@ -166,6 +166,9 @@ section#getting-here .details p{
 section#contact {
   padding-top: 40px;
 }
+section#contact p{
+  text-align: center;
+}
 section#contact form{
   margin: 0 auto;
   width: 50%;
