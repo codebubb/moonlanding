@@ -43,8 +43,8 @@ nav.navbar{
 section#hero{
   height: 600px;
   position: relative;
-  background-color: transparent;
   text-align: center;
+  overflow: hidden;
 }
 section#hero .container-fluid{
   background-color: transparent;
@@ -72,12 +72,20 @@ section#hero video{
   width: 100%;
   height: 100%;
   transform: scale(2);
-  overflow: hidden;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section#hero .overlay-video{
+  width: 100%;
+  height: 100%;
   z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
-
+  background-color: rgba(0,0,0,0.5);
 }
 
 /* Section 2: Find new places */
